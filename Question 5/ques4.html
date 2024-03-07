@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <script src="ques4.js"></script>
+      <link rel="stylesheet" href="./Style/ques4.css">
+      <title>Simple Interest Calculator</title>
+   </head>
+   <body>
+      <h2>Simple Interest Calculator</h2>
+      <div class="main">
+         <div class="first">
+            <label for="principal">Principal Amount:</label>
+            <input type="text" id="principal"><br>
+         </div>
+         <div class="second">
+            <label for="rate">Rate of Interest :</label>
+            <input type="text" id="rate"><br>
+         </div>
+         <div class="third">
+            <label for="time">Time Period :</label>
+            <input type="text" id="time"><br>
+         </div>
+      </div>
+      <div class="buttonSet">
+         <button onclick="calculateSimpleInterest()">Calculate</button><br>
+      </div>
+      <p id="result"></p>
+   </body>
+</html>

@@ -1,0 +1,8 @@
+.first{
+	display: flex;
+   	justify-content: center;
+}
+#ques1{
+	margin-top:20px;
+	text-align:center;
+}
