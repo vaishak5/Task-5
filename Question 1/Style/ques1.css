@@ -1,8 +1,15 @@
-.first{
+.first {
 	display: flex;
-   	justify-content: center;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
-#ques1{
-	margin-top:20px;
-	text-align:center;
+
+.first h1 {
+	text-align: center;
+}
+
+#ques1 {
+	margin-top: 20px;
+	text-align: center;
 }

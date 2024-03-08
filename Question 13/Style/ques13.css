@@ -4,12 +4,9 @@
 	align-items: center;
 	gap: 10px;
 }
-.main {
-	text-align:center;
-}
 
 .first input {
-	margin-left: 19px;
+	margin-left: 27px;
 }
 
 .buttonSet {
@@ -20,6 +17,6 @@
 
 }
 
-#sum {
+#result {
 	text-align: center;
 }

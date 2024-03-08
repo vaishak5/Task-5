@@ -21,5 +21,5 @@ function calculateCompoundInterest() {
 
    var compoundInterest = principal * Math.pow(1 + rate / (frequency * 100), frequency * time) - principal;
 
-   document.getElementById("result").innerText = "Compound Interest: " + compoundInterest.toFixed(2);
+   document.getElementById("result").innerHTML = "Compound Interest: " + compoundInterest.toFixed(2);
 }

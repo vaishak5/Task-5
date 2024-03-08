@@ -17,6 +17,6 @@ function numbers() {
    var sum = num1 + num2 + num3;
    var avg = sum / 3;
 
-   document.getElementById("sum").innerText = "The sum is: " + sum;
-   document.getElementById("avg").innerText = "The Average is: " + avg.toFixed(2);
+   document.getElementById("sum").innerHTML = "The sum is: " + sum;
+   document.getElementById("avg").innerHTML = "The Average is: " + avg.toFixed(2);
 }

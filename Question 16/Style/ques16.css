@@ -4,12 +4,17 @@
 	align-items: center;
 	gap: 10px;
 }
-.main {
-	text-align:center;
-}
 
 .first input {
 	margin-left: 19px;
+}
+
+.third input {
+	margin-left: 19px;
+}
+
+.second label {
+	margin-right: 3px;
 }
 
 .buttonSet {
@@ -20,6 +25,6 @@
 
 }
 
-#sum {
+#result {
 	text-align: center;
 }
