@@ -1,0 +1,21 @@
+h2 {
+
+	text-align: center;
+}
+
+.first {
+	display: flex;
+	justify-content: center;
+	gap: 6px;
+}
+
+.buttonSet {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+#result {
+	text-align: center;
+}
