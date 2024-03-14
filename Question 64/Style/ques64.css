@@ -1,0 +1,21 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+h2{
+	text-align: center;
+}
+
+.buttonSet {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+
+}
+
+#result {
+	text-align: center;
+}

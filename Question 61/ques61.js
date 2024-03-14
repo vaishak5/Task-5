@@ -14,8 +14,8 @@ function findCharacterIndex() {
    var index = inputString.indexOf(searchCharacter);
 
    if (index !== -1) {
-      document.getElementById("result").textContent = "Index of '" + searchCharacter + "' in the string: " + index;
+      document.getElementById("result").innerHTML = "Index of '" + searchCharacter + "' in the string: " + index;
    } else {
-      document.getElementById("result").textContent = "'" + searchCharacter + "' not found in the string.";
+      document.getElementById("result").innerHTML = "'" + searchCharacter + "' not found in the string.";
    }
 }
