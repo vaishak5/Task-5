@@ -11,9 +11,9 @@ function printNaturalNumbers() {
 
    var naturalNumbers = '';
    for (var i = number; i >= 1; i--) {
-      naturalNumbers += i ;
+      naturalNumbers += i + " ";
    }
 
 
-   document.getElementById('output').innerHTML = 'Natural Numbers from 1 to ' + number + ': ' + naturalNumbers;
+   document.getElementById('output').innerHTML = 'Natural Numbers from 1 to ' + number + ': ' + naturalNumbers ;
 }

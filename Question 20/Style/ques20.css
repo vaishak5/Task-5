@@ -1,23 +1,58 @@
-h1 {
-	text-align: center;
+*{
+	margin:0;
+	padding:0;
+	color:white;
+	font-size:15px;
 }
 
-body {
-	font-family: Arial, sans-serif;
+h2{
+	color:black;
+	text-align:center;
 }
 
-.calculator {
-	width: 260px;
-	margin: 0 auto;
-	padding: 20px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	background-color: #f9f9f9;
+.mainBody{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	border:3px solid black;
+	border-radius:5px;
+	padding:10px;
+	width:200px;
+	position:relative;
+	top:100px;
+	left:550px;
+	gap:20px;
 }
 
-.calculator input[type="button"] {
-	width: 70px;
-	height: 50px;
-	margin: 5px;
-	font-size: 20px;
+.inputField{
+	background-color:white;
+	border:5px solid black;
+	padding:10px;
+}
+
+input{
+	outline:none;
+	border:none;
+	background-color:transparent;
+	color:black;
+}
+
+.buttons{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+button{
+	width:30px;
+	height:50px;
+	background-color:grey;
+	border:none;
+	cursor:pointer;
+	color:black;
+}
+.clear button{
+
+	width:100%;
+	border:3px solid black;
+	color:black;
 }
