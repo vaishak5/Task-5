@@ -1,5 +1,5 @@
 function reverseCase() {
-   var str = document.getElementById("inputString").value;
+   var str = document.getElementById("inputString").value.trim();
    if (/\d/.test(str)) {
       alert("Please enter only string values.");
       return;

@@ -1,26 +1,36 @@
 function findLargestAndSmallestWord() {
-   var str = document.getElementById("inputString").value;
-   if (/\d/.test(str) || str === '') {
-      alert("Please Enter string values:");
-      return;
-   }
-   var words = str.split(/\s+/);
+    var str = document.getElementById("inputString").value.trim();
+    if (/\d/.test(str) || str === '') {
+        alert("Please enter string values.");
+        return;
+    }
 
-   var largestWord = '';
-   var smallestWord = str;
+    var words = str.split(/\s+/);
 
-   for (var i = 0; i < words.length; i++) {
-      var word = words[i];
+    var largestWords = [];
+    var smallestWords = [];
+    var largestLength = 0;
+    var smallestLength = str.length;
 
-      if (word.length > largestWord.length) {
-         largestWord = word;
-      }
+    for (var i = 0; i < words.length; i++) {
+        var word = words[i];
+        var wordLength = word.length;
 
-      if (word.length < smallestWord.length) {
-         smallestWord = word;
-      }
-   }
+        if (wordLength > largestLength) {
+            largestWords = [word];
+            largestLength = wordLength;
+        } else if (wordLength === largestLength) {
+            largestWords.push(word);
+        }
 
-   document.getElementById("result").innerHTML = "Largest word: " + largestWord + "<br>" +
-      "Smallest word: " + smallestWord;
+        if (wordLength < smallestLength) {
+            smallestWords = [word];
+            smallestLength = wordLength;
+        } else if (wordLength === smallestLength) {
+            smallestWords.push(word);
+        }
+    }
+
+    document.getElementById("result").innerHTML = "Largest word(s): " + largestWords.join(" ") + "<br>" +
+        "Smallest word(s): " + smallestWords.join(" ");
 }

@@ -1,21 +1,20 @@
 function countOccurrences() {
-   var inputString = document.getElementById("inputString").value;
+   var inputString = document.getElementById("inputString").value.trim();
+   
    if (/\d/.test(inputString) || inputString === '') {
-      alert("Please Enter string values:");
+      alert("Please enter string values:");
       return;
    }
+   
    var alphabetCount = {};
 
-
    var str = inputString.toLowerCase();
-
 
    var i = 0;
    while (i < str.length) {
       var char = str[i];
 
       if (/^[a-z]$/.test(char)) {
-
          if (alphabetCount[char] === undefined) {
             alphabetCount[char] = 1;
          } else {
@@ -25,11 +24,10 @@ function countOccurrences() {
       i++;
    }
 
-
    var maxCount = 0;
-   var maxChar = '';
+   var maxChars = [];
 
-   // Loop through each alphabet count in the object
+  
    var alphabetKeys = Object.keys(alphabetCount);
    var j = 0;
    while (j < alphabetKeys.length) {
@@ -37,11 +35,12 @@ function countOccurrences() {
 
       if (alphabetCount[char] > maxCount) {
          maxCount = alphabetCount[char];
-         maxChar = char;
+         maxChars = [char];
+      } else if (alphabetCount[char] === maxCount) {
+         maxChars.push(char); 
       }
       j++;
    }
-
 
    var output = "Occurrences of all alphabets:<br>";
    var k = 0;
@@ -50,7 +49,9 @@ function countOccurrences() {
       output += char + ": " + alphabetCount[char] + "<br>";
       k++;
    }
-   output += "<br>Alphabet with maximum occurrence: " + maxChar + " with count: " + maxCount;
+
+   
+   output += "<br>Maximum number of alphabet occurrence is: " + maxCount + " for the characters " + maxChars.join(", ") + "";
 
    document.getElementById("output").innerHTML = output;
 }

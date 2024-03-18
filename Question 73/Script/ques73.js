@@ -1,6 +1,6 @@
 function consonent() {
 
-   var inputString = document.getElementById("inputString").value;
+   var inputString = document.getElementById("inputString").value.trim();
    if (/\d/.test(inputString) || inputString === '') {
       alert("Please Enter string values:");
       return;

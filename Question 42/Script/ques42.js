@@ -1,7 +1,7 @@
 function calculateSalary() {
    var basicSalary = document.getElementById("basicSalary").value.trim();
 
-   if (isNaN(basicSalary) || basicSalary < 0 || isNaN(basicSalary) === '') {
+   if (isNaN(basicSalary) || basicSalary < 0 || basicSalary === '') {
       alert("Please enter a valid basic salary!");
       return;
    }

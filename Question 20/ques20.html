@@ -11,7 +11,7 @@
     <h2>Simple Calculator</h2>
         <div class="inputField">
             <form>
-                <input type="text" id="input">
+                <input type="text" id="input" oninput="validateInput()">
             </form>
         </div>
         <div class="buttons">
@@ -38,8 +38,11 @@
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="calculate()">=</button>
         </div>
+	<div class="delete">
+		<button onclick="deleteAll()">C</button>
+	</div>
         <div class="clear">
-            <button onclick="clearAll()">Clear</button>
+            <button onclick="clearAll()">AC</button>
         </div>
     </div>
 </body>

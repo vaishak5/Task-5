@@ -1,6 +1,10 @@
 function calculateLength() {
-   var inputString = document.getElementById("inputString").value;
+   var inputString = document.getElementById("inputString").value.trim();
    if (/\d/.test(inputString)) {
+      alert("Please enter only string values.");
+      return;
+   }
+	if(inputString===''){
       alert("Please enter only string values.");
       return;
    }

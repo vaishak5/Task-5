@@ -1,23 +1,30 @@
 function identifyMissingLetter() {
+            var inputString = document.getElementById("inputString").value.toLowerCase();
+            if (inputString === "") {
+                alert("Please enter any string values");
+                return;
+            }
 
-   var inputString = document.getElementById("inputString").value;
+            if (/\d/.test(inputString)) {
+                alert("Please enter any string values");
+                return;
+            }
 
+            var str = inputString.split('').sort().join('');
+            var char = str.charAt(0);
+            var lastChar = str.charAt(str.length - 1);
 
-   var str = inputString.toLowerCase();
+            var missingLetters = "";
 
+            for (var i = char.charCodeAt(0); i < lastChar.charCodeAt(0); i++) {
+                if (!str.includes(String.fromCharCode(i))) {
+                    missingLetters += String.fromCharCode(i) + "  ";
+                }
+            }
 
-   var alphabet = 'abcdefghijklmnopqrstuvwxyz';
-
-
-   for (var i = 0; i < alphabet.length; i++) {
-
-      if (!str.includes(alphabet[i])) {
-
-         document.getElementById("output").innerHTML = "Missing letter:" + alphabet[i];
-         return;
-      }
-   }
-
-
-   document.getElementById("output").innerHTML = "There is no missing letter!";
-}
+            if (missingLetters.length == 0) {
+                document.getElementById("output").innerHTML = "There is no missing letter";
+            } else {
+                document.getElementById("output").innerHTML = "The missing letters are: " + missingLetters;
+            }
+        }

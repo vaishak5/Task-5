@@ -5,7 +5,7 @@ function calculateBill() {
       alert("Please enter a valid number of units!");
       return;
    }
-   if (isNaN(units) === '') {
+   if (units === '') {
       alert("Please enter a valid number of units!");
       return;
    }

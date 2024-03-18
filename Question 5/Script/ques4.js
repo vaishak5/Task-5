@@ -1,13 +1,13 @@
 function calculateSimpleInterest() {
-   var principal = document.getElementById("principal").value;
-   var rate = document.getElementById("rate").value;
-   var time = document.getElementById("time").value;
+   var principal = document.getElementById("principal").value.trim();
+   var rate = document.getElementById("rate").value.trim();
+   var time = document.getElementById("time").value.trim();
 
    if (isNaN(principal) || isNaN(rate) || isNaN(time)) {
       alert("Please enter valid numeric values.");
       return;
    }
-   if (isNaN(principal) === '' || isNaN(rate) === '' || isNaN(time) === '') {
+   if (principal === '' || rate === '' || time === '') {
       alert("Please enter numbers in the field.");
       return;
    }

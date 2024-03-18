@@ -1,14 +1,14 @@
 function calculateTotal() {
-   var physicsMarks = document.getElementById("physics").value;
-   var chemistryMarks = document.getElementById("chemistry").value;
-   var mathsMarks = document.getElementById("maths").value;
-   if (physicsMarks.trim() === '' || isNaN(physicsMarks.trim()) || chemistryMarks.trim() === '' || isNaN(chemistryMarks.trim()) || mathsMarks.trim() === '' || isNaN(mathsMarks.trim())) {
+   var physicsMarks = document.getElementById("physics").value.trim();
+   var chemistryMarks = document.getElementById("chemistry").value.trim();
+   var mathsMarks = document.getElementById("maths").value.trim();
+   if (physicsMarks === '' || isNaN(physicsMarks.trim()) || chemistryMarks === '' || isNaN(chemistryMarks.trim()) || mathsMarks === '' || isNaN(mathsMarks.trim())) {
       alert("Please enter a valid numeric value");
       return;
    }
    physicsMarks = parseInt(physicsMarks);
    chemistryMarks = parseInt(chemistryMarks);
-   mathsMarks = parseInt(chemistryMarks);
+   mathsMarks = parseInt(mathsMarks);
 
    var totalMarks = physicsMarks + chemistryMarks + mathsMarks;
    var totalMP = physicsMarks + mathsMarks;
@@ -18,11 +18,20 @@ function calculateTotal() {
 }
 
 function checkEligibility() {
-   var physicsMarks = parseInt(document.getElementById("physics").value);
-   var chemistryMarks = parseInt(document.getElementById("chemistry").value);
-   var mathsMarks = parseInt(document.getElementById("maths").value);
-   var totalMarks = parseInt(document.getElementById("total").value);
-   var totalMP = parseInt(document.getElementById("totalMP").value);
+   var physicsMarks = document.getElementById("physics").value.trim();
+   var chemistryMarks = document.getElementById("chemistry").value.trim();
+   var mathsMarks = document.getElementById("maths").value.trim();
+   var totalMarks = document.getElementById("total").value.trim();
+   var totalMP = document.getElementById("totalMP").value.trim();
+   physicsMarks = parseInt("physicsMarks");
+   chemistryMarks = parseInt("chemistryMarks");
+   mathsMarks = parseInt("mathsMarks");
+   totalMarks = parseInt("totalMarks");
+   totalMP = parseInt("totalMP");
+   if (totalMarks === '' || isNaN(totalMarks) || totalMP === '' || isNaN(totalMP)) {
+      alert("Please enter a valid numeric value");
+      return;
+   }
 
    var eligibilityMessage = "";
 

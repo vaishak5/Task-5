@@ -1,15 +1,15 @@
 function calculateCompoundInterest() {
-   var principal = document.getElementById("principal").value;
-   var rate = document.getElementById("rate").value;
-   var time = document.getElementById("time").value;
-   var frequency = document.getElementById("frequency").value;
+   var principal = document.getElementById("principal").value.trim();
+   var rate = document.getElementById("rate").value.trim();
+   var time = document.getElementById("time").value.trim();
+   var frequency = document.getElementById("frequency").value.trim();
 
    if (isNaN(principal) || isNaN(rate) || isNaN(time) || isNaN(frequency)) {
       alert("Please enter valid numeric values.");
       return;
    }
 
-   if (isNaN(principal) === '' || isNaN(rate) === '' || isNaN(time) === '' || isNaN(frequency) === '') {
+   if (principal === '' || rate === '' || time === '' || frequency === '') {
       alert("Please enter numbers in the field.");
       return;
    }

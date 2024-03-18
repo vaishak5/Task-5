@@ -1,5 +1,5 @@
 function countCharacters() {
-   var str = document.getElementById("inputString").value;
+   var str = document.getElementById("inputString").value.trim();
    var alphabetCount = 0;
    var digitCount = 0;
    var specialCount = 0;

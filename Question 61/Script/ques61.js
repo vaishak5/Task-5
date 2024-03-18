@@ -1,6 +1,10 @@
 function findCharacterIndex() {
-   var inputString = document.getElementById("inputString").value;
+   var inputString = document.getElementById("inputString").value.trim();
    if (/\d/.test(inputString)) {
+      alert("Please enter only string values.");
+      return;
+   }
+	if(inputString===''){
       alert("Please enter only string values.");
       return;
    }
@@ -11,6 +15,11 @@ function findCharacterIndex() {
       alert("Please enter only string values.");
       return;
    }
+	if(searchCharacter===''){
+      alert("Please enter only string values.");
+      return;
+   }
+
    var index = inputString.indexOf(searchCharacter);
 
    if (index !== -1) {

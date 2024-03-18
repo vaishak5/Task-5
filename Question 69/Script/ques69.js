@@ -1,11 +1,15 @@
 function checkClosure() {
-    var inputString = document.getElementById("inputString").value;
+    var inputString = document.getElementById("inputString").value.trim();
     var stack = [];
     var closingChars = {
         '(': ')',
         '{': '}',
         '[': ']'
     };
+	if(inputString===''){
+		alert("Please enter any values");
+		return;
+	}
 
     for (var i = 0; i < inputString.length; i++) {
         var char = inputString[i];

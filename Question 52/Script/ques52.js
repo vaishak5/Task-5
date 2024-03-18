@@ -1,6 +1,6 @@
 function concatenateStrings() {
-   var string1 = document.getElementById('string1').value;
-   var string2 = document.getElementById('string2').value;
+   var string1 = document.getElementById('string1').value.trim();
+   var string2 = document.getElementById('string2').value.trim();
    var containsNumber = false;
    for (var i = 0; i < string1.length; i++) {
       if (!isNaN(string1[i])) {

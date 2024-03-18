@@ -1,11 +1,11 @@
 
 function checkPrefix() {
-    var str = document.getElementById("inputString").value;
+    var str = document.getElementById("inputString").value.trim();
 	 if (/\d/.test(inputString)) {
       alert("Please enter only string values.");
       return;
    }
-    var prefix = document.getElementById("inputPrefix").value;
+    var prefix = document.getElementById("inputPrefix").value.trim();
 	if (/\d/.test(inputPrefix)) {
       alert("Please enter only string values.");
       return;

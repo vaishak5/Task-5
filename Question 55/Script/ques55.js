@@ -1,15 +1,20 @@
+function convertByteToString() {
+    var inputValue = document.getElementById('inputValue').value.trim();
+   if(inputValue===''){
+	alert("Please enter valid number");
+	return;
+}
+    var byteArray = inputValue.split(',').map(function(item) {
+        return parseInt(item.trim(), 10);
+    });
+    var str = byteToString(byteArray);
+    document.getElementById('result').innerHTML = "String: " + str;
+}
 
-        function convertByteToString() {
-            var byte = [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100]; 
-            var str = byteToString(byte); 
-            document.getElementById('result').innerHTML = "String: " + str;
-        }
-
-        function byteToString(byteArray) {
-            var str = ''; 
-            for (var i = 0; i < byteArray.length; i++) {
-                str += String.fromCharCode(byteArray[i]); 
-            }
-            return str;
-        }
-    
+function byteToString(byteArray) {
+    var str = '';
+    for (var i = 0; i < byteArray.length; i++) {
+        str += String.fromCharCode(byteArray[i]);
+    }
+    return str;
+}

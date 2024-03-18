@@ -1,17 +1,12 @@
 function checkPalindrome() {
    var inputString = document.getElementById("inputString").value.trim();
 
-
-   var containsNumber = false;
-   for (var i = 0; i < inputString.length; i++) {
-      if (!isNaN(inputString[i])) {
-         containsNumber = true;
-         break;
-      }
+   if (inputString === '') {
+      alert("Please enter string values:");
+      return;
    }
-
-   if (containsNumber) {
-      alert("Please enter only string values");
+   if (/\d/.test(inputString)) {
+      alert("Please enter string values:");
       return;
    }
    var reversedString = "";
@@ -20,8 +15,7 @@ function checkPalindrome() {
       reversedString += inputString[i];
    }
 
-
-   if (inputString === reversedString) {
+   if (inputString == reversedString) {
       document.getElementById("output").innerHTML = "Palindrome!";
    } else {
       document.getElementById("output").innerHTML = "Not a Palindrome!";

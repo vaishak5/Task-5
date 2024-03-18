@@ -1,10 +1,10 @@
 function countOccurrences() {
-   var str = document.getElementById("inputString").value;
+   var str = document.getElementById("inputString").value.trim();
    if (/\d/.test(inputString)) {
       alert("Please enter only string values.");
       return;
    }
-   var charToFind = document.getElementById("inputChar").value;
+   var charToFind = document.getElementById("inputChar").value.trim();
    if (/\d/.test(inputChar)) {
       alert("Please enter only string values.");
       return;

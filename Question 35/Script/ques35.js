@@ -1,6 +1,6 @@
 function checkNumber() {
 
-   var num = document.getElementById("number").value;
+   var num = document.getElementById("number").value.trim();
 
 
    if (isNaN(num) || num === '') {
@@ -17,4 +17,7 @@ function checkNumber() {
    } else {
       document.getElementById("result").innerHTML = "Negative number";
    }
+	if(num==0){
+	document.getElementById("result").innerHTML = "Number is zero";
+	}
 }

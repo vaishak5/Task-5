@@ -1,15 +1,15 @@
 function replaceString() {
-   var originalString = document.getElementById("originalString").value;
+   var originalString = document.getElementById("originalString").value.trim();
    if (/\d/.test(originalString)) {
       alert("Please enter only string values.");
       return;
    }
-   var searchString = document.getElementById("searchString").value;
+   var searchString = document.getElementById("searchString").value.trim();
    if (/\d/.test(searchString)) {
       alert("Please enter only string values.");
       return;
    }
-   var replacementString = document.getElementById("replacementString").value;
+   var replacementString = document.getElementById("replacementString").value.trim();
    if (/\d/.test(replacementString)) {
       alert("Please enter only string values.");
       return;

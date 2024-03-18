@@ -1,15 +1,15 @@
 function findMiddleCharacter() {
-    var inputString = document.getElementById("inputString").value;
+    var inputString = document.getElementById("inputString").value.trim();
     var containsNumber = false;
+	if(inputString===''){
 
-    for (var i = 0; i < inputString.length; i++) {
-        if (!isNaN(inputString[i]) && inputString[i] !== " ") {
-            containsNumber = true;
-            break;
-        }
+   
+        alert("Please enter only string values");
+        return;
     }
+	if(/\d/.test(inputString)){
 
-    if (containsNumber) {
+   
         alert("Please enter only string values");
         return;
     }

@@ -1,5 +1,5 @@
 function findLastCharacter() {
-   var inputString = document.getElementById('inputString').value;
+   var inputString = document.getElementById('inputString').value.trim();
    var containsNumber = false;
    for (var i = 0; i < inputString.length; i++) {
       if (!isNaN(inputString[i])) {
