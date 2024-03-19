@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="./Script/ques20.js"></script>
+    <link rel="stylesheet" href="./Style/ques20.css">
+    <title>Calculator</title>
+   
+</head>
+<body>
+    <div class="mainBody">
+    <h2>Simple Calculator</h2>
+        <div class="inputField">
+            <form>
+                <input type="text" id="input" oninput="validateInput()">
+            </form>
+        </div>
+        <div class="buttons">
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')">+</button>
+        </div>
+        <div class="buttons">
+           <button onclick="appendToDisplay('4')">4</button>
+           <button onclick="appendToDisplay('5')">5</button>
+           <button onclick="appendToDisplay('6')">6</button>
+           <button onclick="appendToDisplay('-')">-</button>
+        </div>
+        <div class="buttons">
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')">*</button>
+        </div>
+        <div class="buttons">
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+	<div class="delete">
+		<button onclick="deleteAll()">C</button>
+	</div>
+        <div class="clear">
+            <button onclick="clearAll()">AC</button>
+        </div>
+    </div>
+</body>
+</html>

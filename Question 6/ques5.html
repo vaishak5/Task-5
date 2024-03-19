@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <script src="./Script/ques5.js"></script>
+      <link rel="stylesheet" href="./Style/ques5.css">
+      <title>Compound Interest Calculator</title>
+   </head>
+   <body>
+      <div class="main">
+         <h2>Compound Interest Calculator</h2>
+         <div class="set">
+            <div class="first">
+               <label for="principal">Principal Amount:</label>
+               <input type="text" id="principal"><br>
+            </div>
+            <div class="second">
+               <label>Annual Interest Rate:</label>
+               <input type="text" id="rate"><br>
+            </div>
+            <div class="third">
+               <label >Time Period:</label>
+               <input type="text" id="time"><br>
+            </div>
+            <div class="fourth">
+               <label >Compound Frequency:</label>
+               <input type="text" id="frequency"><br>
+            </div>
+         </div>
+      </div>
+      <div class="buttonSet">
+         <button onclick="calculateCompoundInterest()">Calculate</button><br>
+      </div>
+      <p id="result"></p>
+   </body>
+</html>

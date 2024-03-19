@@ -1,0 +1,16 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.buttonSet {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+#result {
+	text-align: center;
+}

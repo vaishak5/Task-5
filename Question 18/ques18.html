@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <script src="./Script/ques18.js"></script>
+      <link rel="stylesheet" href="./Style/ques18.css">
+      <title>Admission Eligibility Checker</title>
+   </head>
+   <body>
+      <div class="main">
+         <h1>Admission Eligibility </h1>
+         <div class="set">
+            <div class="first">
+               <label >Marks obtained in Physics:</label>
+               <input type="text" id="physics"><br><br>
+            </div>
+            <div class="second">
+               <label>Marks obtained in Chemistry:</label>
+               <input type="text" id="chemistry"><br><br>
+            </div>
+            <div class="third">
+               <label >Marks obtained in Mathematics:</label>
+               <input type="text" id="maths">
+               <button onclick="calculateTotal()">Sum</button><br><br>
+            </div>
+            <div class="fourth">
+               <label>Total marks of Maths, Physics and Chemistry:</label>
+               <input type="text" id="total"><br><br>
+            </div>
+            <div class="fifth">
+               <label for="totalMP">Total marks of Maths and Physics:</label>
+               <input type="text" id="totalMP"><br><br>
+            </div>
+         </div>
+      </div>
+      <div class="butonSet">
+         <button onclick="checkEligibility()">Check Eligibility</button>
+      </div>
+      <p id="result"></p>
+   </body>
+</html>

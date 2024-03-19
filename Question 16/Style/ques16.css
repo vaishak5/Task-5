@@ -1,0 +1,30 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.first input {
+	margin-left: 19px;
+}
+
+.third input {
+	margin-left: 19px;
+}
+
+.second label {
+	margin-right: 3px;
+}
+
+.buttonSet {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+
+}
+
+#result {
+	text-align: center;
+}

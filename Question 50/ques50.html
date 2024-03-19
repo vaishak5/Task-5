@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <script src="./Script/ques50.js"></script>
+      <link rel="stylesheet" href="./Style/ques50.css">
+      <title>Arithmetic Operations</title>
+   </head>
+   <body>
+      <h2>Arithmetic Operations</h2>
+      <div class="first">
+         <h4>1. ADD</h4>
+         <h4>2. SUBTRACT</h4>
+         <h4>3. MULTIPLICATION</h4>
+         <h4>4. DIVISION</h4>
+         <h4>5. EXIT</h4>
+         <input type="text" id="select"><br>
+         <div class="buttonSet">
+            <button onclick="selectOperation()">Select</button><br>
+         </div>
+         <p id="res"></p>
+         <div id="inputFields" style="display:none;">
+            <label>Enter first number: </label>
+            <input type="text" id="num1"><br><br>
+            <label>Enter second number: </label>
+            <input type="text" id="num2"><br><br>
+            <button onclick="performOperation()">Calculate</button>
+         </div>
+      </div>
+      <p id="result"></p>
+   </body>
+</html>

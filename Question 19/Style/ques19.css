@@ -1,0 +1,25 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+.main h1{
+	text-align:center;
+}
+
+.first input {
+	margin-left: 10px;
+}
+
+.buttonSet {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+
+}
+
+#result {
+	text-align: center;
+}
